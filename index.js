@@ -10,10 +10,10 @@ app.use((req,res,next)=>{
     res.statusCode=200;
     res.setHeader('Content-Type','text/html');
     res.end(`<html>
-    <title>This is index.html</title>
+    <title>Bajaj Task</title>
     <body>
-    <h1>Index.HTML</h1>
-    <p>This is the contents of this file</p>
+      <h1>Use Post Method on this API</h1>
+      <p>https://bajaj-task.herokuapp.com/bfhl</p>
     </body>
     </html>`)
 });

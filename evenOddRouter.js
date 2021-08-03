@@ -25,10 +25,22 @@ evenOddRouter
     next();
   })
   .get(async (req, res, next) => {
-    res.json({});
+    res.end(`<html>
+    <title>Bajaj Task</title>
+    <body>
+      <h1>Use Post Method on this API</h1>
+      <p>https://bajaj-task.herokuapp.com/bfhl</p>
+    </body>
+    </html>`)
   })
   .put((req, res, next) => {
-    res.json({});
+    res.end(`<html>
+    <title>Bajaj Task</title>
+    <body>
+      <h1>Use Post Method on this API</h1>
+      <p>https://bajaj-task.herokuapp.com/bfhl</p>
+    </body>
+    </html>`)
   })
   .post(async (req, res, next) => {
     res.set("Access-Control-Allow-Origin", "*");
@@ -73,7 +85,14 @@ evenOddRouter
     }
   })
   .delete((req, res, next) => {
-    res.json({});
+    res.end(`<html>
+    <title>Bajaj Task</title>
+    <body>
+      <h1>Use Post Method on this API</h1>
+      <p>https://bajaj-task.herokuapp.com/bfhl</p>
+    </body>
+    </html>`)
+
   });
 
 module.exports = evenOddRouter;
